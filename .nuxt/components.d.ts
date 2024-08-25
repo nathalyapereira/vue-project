@@ -2,9 +2,10 @@
 import type { DefineComponent, SlotsType } from 'vue'
 type IslandComponent<T extends DefineComponent> = T & DefineComponent<{}, {refresh: () => Promise<void>}, {}, {}, {}, {}, {}, {}, {}, {}, {}, {}, SlotsType<{ fallback: { error: unknown } }>>
 interface _GlobalComponents {
-      'MoleculeAppFooter': typeof import("../components/molecule/AppFooter/AppFooter.vue")['default']
-    'MoleculeAppHeader': typeof import("../components/molecule/AppHeader/AppHeader.vue")['default']
-    'OrganismHome': typeof import("../components/organism/Home/Home.vue")['default']
+      'AppFooter': typeof import("../components/molecule/AppFooter/AppFooter.vue")['default']
+    'AppHeader': typeof import("../components/molecule/AppHeader/AppHeader.vue")['default']
+    'Products': typeof import("../components/molecule/Products/Products.vue")['default']
+    'Home': typeof import("../components/organism/Home/Home.vue")['default']
     'NuxtWelcome': typeof import("../node_modules/nuxt/dist/app/components/welcome")['default']
     'NuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
     'NuxtErrorBoundary': typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
@@ -28,9 +29,10 @@ interface _GlobalComponents {
     'Body': typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
     'NuxtIsland': typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
     'NuxtRouteAnnouncer': IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
-      'LazyMoleculeAppFooter': typeof import("../components/molecule/AppFooter/AppFooter.vue")['default']
-    'LazyMoleculeAppHeader': typeof import("../components/molecule/AppHeader/AppHeader.vue")['default']
-    'LazyOrganismHome': typeof import("../components/organism/Home/Home.vue")['default']
+      'LazyAppFooter': typeof import("../components/molecule/AppFooter/AppFooter.vue")['default']
+    'LazyAppHeader': typeof import("../components/molecule/AppHeader/AppHeader.vue")['default']
+    'LazyProducts': typeof import("../components/molecule/Products/Products.vue")['default']
+    'LazyHome': typeof import("../components/organism/Home/Home.vue")['default']
     'LazyNuxtWelcome': typeof import("../node_modules/nuxt/dist/app/components/welcome")['default']
     'LazyNuxtLayout': typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
     'LazyNuxtErrorBoundary': typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
@@ -68,9 +70,10 @@ declare module 'vue' {
   export interface GlobalComponents extends _GlobalComponents { }
 }
 
-export const MoleculeAppFooter: typeof import("../components/molecule/AppFooter/AppFooter.vue")['default']
-export const MoleculeAppHeader: typeof import("../components/molecule/AppHeader/AppHeader.vue")['default']
-export const OrganismHome: typeof import("../components/organism/Home/Home.vue")['default']
+export const AppFooter: typeof import("../components/molecule/AppFooter/AppFooter.vue")['default']
+export const AppHeader: typeof import("../components/molecule/AppHeader/AppHeader.vue")['default']
+export const Products: typeof import("../components/molecule/Products/Products.vue")['default']
+export const Home: typeof import("../components/organism/Home/Home.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
 export const NuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']
@@ -94,9 +97,10 @@ export const Html: typeof import("../node_modules/nuxt/dist/head/runtime/compone
 export const Body: typeof import("../node_modules/nuxt/dist/head/runtime/components")['Body']
 export const NuxtIsland: typeof import("../node_modules/nuxt/dist/app/components/nuxt-island")['default']
 export const NuxtRouteAnnouncer: IslandComponent<typeof import("../node_modules/nuxt/dist/app/components/server-placeholder")['default']>
-export const LazyMoleculeAppFooter: typeof import("../components/molecule/AppFooter/AppFooter.vue")['default']
-export const LazyMoleculeAppHeader: typeof import("../components/molecule/AppHeader/AppHeader.vue")['default']
-export const LazyOrganismHome: typeof import("../components/organism/Home/Home.vue")['default']
+export const LazyAppFooter: typeof import("../components/molecule/AppFooter/AppFooter.vue")['default']
+export const LazyAppHeader: typeof import("../components/molecule/AppHeader/AppHeader.vue")['default']
+export const LazyProducts: typeof import("../components/molecule/Products/Products.vue")['default']
+export const LazyHome: typeof import("../components/organism/Home/Home.vue")['default']
 export const LazyNuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome")['default']
 export const LazyNuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
 export const LazyNuxtErrorBoundary: typeof import("../node_modules/nuxt/dist/app/components/nuxt-error-boundary")['default']

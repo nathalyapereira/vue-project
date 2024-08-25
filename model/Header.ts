@@ -1,4 +1,10 @@
-export interface optionHeader {
+export interface IOptionHeader {
 option: string
-titles?: string[] | undefined
+optionToSelect?:  SelectOptionHeader[]
 }
+
+export interface SelectOptionHeader {
+    link: string
+    title: string
+    }
+

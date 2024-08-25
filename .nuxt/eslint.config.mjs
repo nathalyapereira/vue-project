@@ -22,7 +22,7 @@ export const options = resolveOptions({
       "utils"
     ],
     "components": [
-      "components"
+      "@/components"
     ],
     "componentsPrefixed": [],
     "layouts": [

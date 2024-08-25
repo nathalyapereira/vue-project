@@ -1,18 +1,12 @@
 <template>
   <div>
-  <AppHeader />
-  <Home />
-  <AppFooter />
+    <AppHeader />
+    <Home />
+    <Products />
+    <AppFooter />
   </div>
-
 </template>
 
-<script setup>
-import AppHeader from '~/components/molecule/AppHeader/AppHeader.vue';
-import AppFooter from '~/components/molecule/AppFooter/AppFooter.vue';
-import Home from '~/components/organism/Home/Home.vue';
-</script>
+<script setup></script>
 
 <style lang="scss" scoped></style>
-
-
